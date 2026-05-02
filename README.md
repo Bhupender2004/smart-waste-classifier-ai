@@ -354,27 +354,6 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
 
-## 👨‍💻 Author
-
-**Arpan Pramanik**
-
-- GitHub: [@arpanpramanik2003](https://github.com/arpanpramanik2003)
-- Repository: [smart-waste-classification](https://github.com/arpanpramanik2003/smart-waste-classification)
-
-## 🙏 Acknowledgments
-
-- **TrashNet Dataset**: Thanks to Gary Thung and Mindy Yang for creating and sharing the TrashNet dataset
-- **MobileNet**: Google Research for the efficient MobileNet architecture
-- **Streamlit**: For providing an excellent framework for building ML web applications
-- **TensorFlow/Keras**: For powerful deep learning tools and APIs
-- **Open Source Community**: For inspiration and various tools that made this project possible
-
-## 📞 Support & Contact
-
-For questions, issues, or suggestions:
-
-- **Open an issue**: [GitHub Issues](https://github.com/arpanpramanik2003/smart-waste-classification/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/arpanpramanik2003/smart-waste-classification/discussions)
 
 ## 🌟 Star This Repository
 
