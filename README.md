@@ -115,7 +115,7 @@ MobileNetV2 (Transfer Learning)
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/arpanpramanik2003/smart-waste-classification.git
+git clone https://github.com/Bhupender2004/smart-waste-classifier-ai
 cd smart-waste-classification
 ```
 
