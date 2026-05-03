@@ -55,6 +55,123 @@ def load_and_preprocess_image(image_data):
     return img_array, img
 
 # Streamlit App Layout
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;700&display=swap');
+
+    :root {
+        --bg: #0c0f14;
+        --bg-accent: #121723;
+        --card: #151b29;
+        --card-2: #1b2233;
+        --text: #e8edf6;
+        --muted: #b7c0d6;
+        --accent: #ffb347;
+        --accent-2: #ff6f91;
+        --ring: rgba(255, 179, 71, 0.35);
+    }
+
+    .stApp {
+        background: radial-gradient(1200px 600px at 20% -10%, #1b2336 0%, transparent 55%),
+                    radial-gradient(900px 500px at 90% 10%, #3a1b2a 0%, transparent 60%),
+                    linear-gradient(180deg, var(--bg) 0%, #0b0e13 100%);
+        color: var(--text);
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .block-container {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        max-width: 920px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Fraunces', serif;
+        letter-spacing: 0.2px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        color: var(--text);
+        text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    p, .stMarkdown, .stText, .stWrite {
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.6;
+    }
+
+    .stFileUploader {
+        background: linear-gradient(135deg, var(--card), var(--card-2));
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        padding: 1rem;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        animation: rise 700ms ease-out;
+    }
+
+    .stFileUploader label {
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    .stImage img {
+        border-radius: 14px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .stAlert {
+        border-radius: 12px !important;
+    }
+
+    .stMarkdown strong {
+        color: var(--text);
+    }
+
+    .stMarkdown hr {
+        border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    [data-testid="stSidebar"] {
+        background: #0e1420;
+    }
+
+    [data-testid="stFileUploader"] section {
+        border: 1px dashed rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+    }
+
+    [data-testid="stFileUploader"] button {
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: #0c0f14;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        box-shadow: 0 10px 30px var(--ring);
+        transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    [data-testid="stFileUploader"] button:hover {
+        transform: translateY(-1px) scale(1.01);
+        box-shadow: 0 14px 36px var(--ring);
+    }
+
+    @keyframes rise {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .stMarkdown, .stImage, .stFileUploader, .stWrite {
+        animation: rise 600ms ease-out;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.title("Smart Waste Classification & Recycling Suggestion System")
 st.write("Upload an image of waste, and the model will predict its class along with detailed recycling instructions.")
 
